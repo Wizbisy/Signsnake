@@ -139,21 +139,13 @@ function gameOver() {
 // Start game
 function startGame() {
   try {
-    const startBtn = document.getElementById("start-btn");
-    startBtn.addEventListener("click", () => {
-      startBtn.style.display = "none";
-      document.getElementById("gameCanvas").style.display = "block";
-      
-      clearInterval(gameLoop);
-      initGame();
-      gameLoop = setInterval(update, speed);
-    });
+    clearInterval(gameLoop);
+    initGame();
+    gameLoop = setInterval(update, speed);
   } catch (error) {
     console.error('Error starting game:', error);
   }
 }
-
-
 
 // Share score
 function shareScore() {
