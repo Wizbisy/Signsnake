@@ -129,13 +129,12 @@ function gameOver() {
     clearInterval(gameLoop);
     gameOverSound.play();
     alert(`Game Over! Score: ${score}`);
-    initGame();
-    startGame();
+    // Do not call initGame() or startGame() here
+    // User will have to click "Start Game" manually
   } catch (error) {
     console.error('Error in game over:', error);
   }
 }
-
 // Start game
 function startGame() {
   try {
@@ -150,7 +149,7 @@ function startGame() {
 // Share score
 function shareScore() {
   try {
-    const text = `I scored ${score} in SignSnake! Play now at https://signsnake.vercel.app @sign #SignSnake`;
+    const text = `I scored ${score} in SignSnake! Play now at https://signsnake.vercel.app @sign #SeeingSign #SignSnake`;
     window.open(`https://x.com/intent/tweet?text=${encodeURIComponent(text)}`);
   } catch (error) {
     console.error('Error sharing score:', error);
