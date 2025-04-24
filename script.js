@@ -59,11 +59,9 @@ function spawnDocument() {
 // Draw game
 function draw() {
   try {
-    // Clear canvas
     ctx.fillStyle = '#2A2A2A';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-    // Draw snake (pen)
+    
     ctx.fillStyle = flash ? '#FFC107' : '#FF6200';
     ctx.strokeStyle = '#FFC107';
     ctx.lineWidth = 2;

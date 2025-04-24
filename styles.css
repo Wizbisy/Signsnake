@@ -1,135 +1,135 @@
 body {
-  background-color: #1A1A1A;
-  color: #FFFFFF;
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-.container {
-  text-align: center;
-  padding: 20px;
-  animation: fadeIn 1s ease-in;
-}
-
-.logo {
-  width: 120px;
-  height: 120px;
-  margin-bottom: 10px;
-}
-
-h1 {
-  color: #FF6200;
-  font-size: 2.5em;
-  text-shadow: 0 0 10px #FF6200, 0 0 20px #FF6200;
-  margin: 10px 0;
-}
-
-.tagline {
-  color: #FFC107;
-  font-size: 1.2em;
-  margin-bottom: 20px;
-}
-
-.controls {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-label, select, button, #sound-toggle {
-  background-color: #FF6200;
-  color: #1A1A1A;
-  border: none;
-  padding: 10px 15px;
-  font-size: 1em;
-  cursor: pointer;
-  border-radius: 5px;
-  margin: 5px;
-  transition: all 0.3s;
-}
-
-label {
-  background-color: transparent;
-  color: #FFFFFF;
-}
-
-select:hover, button:hover, #sound-toggle:hover {
-  background-color: #FFC107;
-  color: #1A1A1A;
-  box-shadow: 0 0 10px #FFC107;
-}
-
-.scores {
-  margin-bottom: 20px;
-  font-size: 1.2em;
-}
-
-.scores p {
-  margin: 5px 0;
-}
-
-#game-canvas {
-  border: 2px solid #FF6200;
-  box-shadow: 0 0 15px #FF6200;
-  background-color: #2A2A2A;
-  max-width: 100%;
-  touch-action: none;
-}
-
-.instructions {
-  color: #FFFFFF;
-  font-size: 1em;
-  margin-top: 10px;
-}
-
-.footer {
-  margin-top: 20px;
-  font-size: 0.9em;
-}
-
-.footer a {
-  color: #FFC107;
-  text-decoration: none;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
-
-.credit {
-  margin-top: 5px;
-  font-size: 0.8em;
-  color: #FFC107;
-}
-
-.credit-highlight {
-  color: #FF6200;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.credit-highlight:hover {
-  text-shadow: 0 0 10px #FF6200;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@media (max-width: 600px) {
-  h1 { font-size: 2em; }
-  .logo { width: 100px; height: 100px; }
-  label, select, button, #sound-toggle { padding: 8px; font-size: 0.9em; }
-  #game-canvas { width: 100%; height: auto; }
-  .controls { flex-direction: column; gap: 5px; }
-}
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .logo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    color: #FF6200;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #FF6200, 0 0 20px #FF6200;
+    margin: 10px 0;
+  }
+  
+  .tagline {
+    color: #FFC107;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  label, select, button, #sound-toggle {
+    background-color: #FF6200;
+    color: #1A1A1A;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    transition: all 0.3s;
+  }
+  
+  label {
+    background-color: transparent;
+    color: #FFFFFF;
+  }
+  
+  select:hover, button:hover, #sound-toggle:hover {
+    background-color: #FFC107;
+    color: #1A1A1A;
+    box-shadow: 0 0 10px #FFC107;
+  }
+  
+  .scores {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  
+  .scores p {
+    margin: 5px 0;
+  }
+  
+  #game-canvas {
+    border: 2px solid #FF6200;
+    box-shadow: 0 0 15px #FF6200;
+    background-color: #2A2A2A;
+    max-width: 100%;
+    touch-action: none;
+  }
+  
+  .instructions {
+    color: #FFFFFF;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+  }
+  
+  .footer a {
+    color: #FFC107;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .credit {
+    margin-top: 5px;
+    font-size: 0.8em;
+    color: #FFC107;
+  }
+  
+  .credit-highlight {
+    color: #FF6200;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .credit-highlight:hover {
+    text-shadow: 0 0 10px #FF6200;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @media (max-width: 600px) {
+    h1 { font-size: 2em; }
+    .logo { width: 100px; height: 100px; }
+    label, select, button, #sound-toggle { padding: 8px; font-size: 0.9em; }
+    #game-canvas { width: 100%; height: auto; }
+    .controls { flex-direction: column; gap: 5px; }
+  }
