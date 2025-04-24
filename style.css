@@ -17,8 +17,8 @@ body {
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   margin-bottom: 10px;
 }
 
@@ -41,9 +41,10 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
-select, button, #sound-toggle {
+label, select, button, #sound-toggle {
   background-color: #FF6200;
   color: #1A1A1A;
   border: none;
@@ -53,6 +54,11 @@ select, button, #sound-toggle {
   border-radius: 5px;
   margin: 5px;
   transition: all 0.3s;
+}
+
+label {
+  background-color: transparent;
+  color: #FFFFFF;
 }
 
 select:hover, button:hover, #sound-toggle:hover {
@@ -122,8 +128,8 @@ select:hover, button:hover, #sound-toggle:hover {
 
 @media (max-width: 600px) {
   h1 { font-size: 2em; }
-  .logo { width: 80px; height: 80px; }
-  select, button, #sound-toggle { padding: 8px; font-size: 0.9em; }
+  .logo { width: 100px; height: 100px; }
+  label, select, button, #sound-toggle { padding: 8px; font-size: 0.9em; }
   #game-canvas { width: 100%; height: auto; }
-  .controls { flex-direction: column; }
+  .controls { flex-direction: column; gap: 5px; }
 }
